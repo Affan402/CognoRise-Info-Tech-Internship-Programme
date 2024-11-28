@@ -14,4 +14,8 @@ def is_Win(player, computer):
     if (player == "r" and computer == "s") or (player == "p" and computer == "r") or (player == "s" and computer == "p"):
         return True
     
-print(play())
+while True:
+    print(play())
+    play_again = input("Do you want to play again? (Y/N): ").upper()
+    if play_again != 'Y':
+        break
